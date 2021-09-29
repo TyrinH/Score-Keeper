@@ -19,5 +19,8 @@ p2Button.addEventListener('click', function() {
 
 reset.addEventListener('click', function() {
     p1Score = 0;
+    p1Value.textContent = 0;
     p2Score = 0;
+    p2Value.textContent = 0;
+
 })
