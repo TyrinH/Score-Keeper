@@ -2,6 +2,7 @@ const p1Value = document.querySelector('#p1Value')
 const p2Value = document.querySelector('#p2Value')
 const p1Button = document.querySelector('#p1Button')
 const p2Button = document.querySelector('#p2Button')
+const winningValue = document.querySelector('#winningValue')
 const reset = document.querySelector('#reset')
 let p1Score = 0;
 let p2Score = 0;
@@ -28,6 +29,10 @@ p2Button.addEventListener('click', function() {
         p2Button.disabled = true;
         p1Button.disabled = true;
     }
+})
+
+winningValue.addEventListener('change', function() {
+    winningScore = parseInt(this.value)
 })
 
 reset.addEventListener('click', function() {
