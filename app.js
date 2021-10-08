@@ -33,23 +33,17 @@ p2Button.addEventListener('click', function() {
 
 winningValue.addEventListener('change', function() {
     winningScore = parseInt(this.value)
+    resetGame()
+
+})
+
+reset.addEventListener('click', resetGame), {
+}
+function resetGame(){
     p1Score = 0;
     p1Value.textContent = 0;
     p2Score = 0;
     p2Value.textContent = 0;
     p1Button.disabled = false;
     p2Button.disabled = false;
-
-
-})
-
-reset.addEventListener('click', function() {
-    p1Score = 0;
-    p1Value.textContent = 0;
-    p2Score = 0;
-    p2Value.textContent = 0;
-    p1Button.disabled = false;
-    p2Button.disabled = false;
-
-})
-
+}
