@@ -1,11 +1,22 @@
-const p1Value = document.querySelector('#p1Value')
-const p2Value = document.querySelector('#p2Value')
-const p1Button = document.querySelector('#p1Button')
-const p2Button = document.querySelector('#p2Button')
-const winningValue = document.querySelector('#winningValue')
-const reset = document.querySelector('#reset')
-let p1Score = 0;
-let p2Score = 0;
+let Player = {
+    value: document.querySelector('#p1Value'),
+    button: document.querySelector('#p1Button'),
+    score: 0,
+}
+
+let opponent = {
+    value: document.querySelector('#p2Value'),
+    button: document.querySelector('#p2Button'),
+    score: 0,
+}
+//const p1Value = document.querySelector('#p1Value')
+//const p2Value = document.querySelector('#p2Value')
+//const p1Button = document.querySelector('#p1Button')
+//const p2Button = document.querySelector('#p2Button')
+//const winningValue = document.querySelector('#winningValue')
+//const reset = document.querySelector('#reset')
+//let p1Score = 0;
+//let p2Score = 0;
 let winningScore = 5;
 
 p1Button.addEventListener('click', function() {
