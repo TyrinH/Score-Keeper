@@ -1,4 +1,4 @@
-let Player = {
+let player = {
     value: document.querySelector('#p1Value'),
     button: document.querySelector('#p1Button'),
     score: 0,
@@ -19,26 +19,26 @@ let opponent = {
 //let p2Score = 0;
 let winningScore = 5;
 
-p1Button.addEventListener('click', function() {
+player.button.addEventListener('click', function() {
 
-    if(winningScore != p1Score){
-    p1Score += 1;
-    p1Value.textContent = p1Score;
+    if(winningScore != player.score){
+    player.score += 1;
+    player.value.textContent = player.score;
     }
     else{
-        p1Button.disabled = true;
-        p2Button.disabled = true;
+        player.button.disabled = true;
+        opponent.button.disabled = true;
     }
 })
 
-p2Button.addEventListener('click', function() {
-    if(winningScore != p2Score){
-    p2Score += 1;
-    p2Value.textContent = p2Score;
+opponent.button.addEventListener('click', function() {
+    if(winningScore != opponent.score){
+    opponent.score += 1;
+    opponent.value.textContent = opponent.score;
     }
     else{
-        p2Button.disabled = true;
-        p1Button.disabled = true;
+        opponent.button.disabled = true;
+        player.button.disabled = true;
     }
 })
 
@@ -51,10 +51,10 @@ winningValue.addEventListener('change', function() {
 reset.addEventListener('click', resetGame), {
 }
 function resetGame(){
-    p1Score = 0;
-    p1Value.textContent = 0;
-    p2Score = 0;
-    p2Value.textContent = 0;
-    p1Button.disabled = false;
-    p2Button.disabled = false;
+    player.score = 0;
+    player.value.textContent = 0;
+    opponent.score = 0;
+    opponent.value.textContent = 0;
+    player.button.disabled = false;
+    opponent.button.disabled = false;
 }
