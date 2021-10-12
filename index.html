@@ -10,18 +10,39 @@
 <body>
     <h1>Score keeping App</h1>
 
-    <h2><span id='p1Value'>0</span> to <span id='p2Value'>0</span></h2>
-    <button id='p1Button'>Player One +1</button>
-    <button id='p2Button'>Player Two +1</button>
-    <select name="" id="winningValue">
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-    </select>
-    <button id='reset'>Reset</button>
+    <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Score Keeping App
+          </p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <h2><span id='p1Value'>0</span> to <span id='p2Value'>0</span></h2>
+            <br>
+          </div>
+        </div>
+        <footer class="card-footer">
+            <button id='p1Button'>Player One +1</button>
+            <button id='p2Button'>Player Two +1</button>
+            <select name="" id="winningValue">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <button id='reset'>Reset</button>
+        </footer>
+      </div>
+
+    
 
 
     <script src="app.js"></script>
