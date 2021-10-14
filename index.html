@@ -10,9 +10,12 @@
 <body>
     <h1>Score keeping App</h1>
 
+
+  <div class="columns is-centered">
+    <div class="column is-half">
     <div class="card">
         <header class="card-header">
-          <p class="card-header-title">
+          <p class="card-header-title is-centered">
             Score Keeping App
           </p>
           <button class="card-header-icon" aria-label="more options">
@@ -21,16 +24,16 @@
             </span>
           </button>
         </header>
-        <div class="card-content">
-          <div class="content">
+        <div class="card-content cloumns">
+          <div class="content is-large column is-centered">
             <h2><span id='p1Value'>0</span> to <span id='p2Value'>0</span></h2>
             <br>
           </div>
         </div>
         <footer class="card-footer">
-            <button id='p1Button' class="button is-large">Player One +1</button>
-            <button id='p2Button' class="button is-large">Player Two +1</button>
-            <select name="" id="winningValue">
+            <button id='p1Button' class="button is-large is-primary">Player One +1</button>
+            <button id='p2Button' class="button is-large is-warning">Player Two +1</button>
+            <select name="" id="winningValue" class="button is-large">
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
@@ -38,8 +41,10 @@
                 <option value="7">7</option>
                 <option value="8">8</option>
             </select>
-            <button id='reset' class="button is-large">Reset</button>
+            <button id='reset' class="button is-large is-danger">Reset</button>
         </footer>
+      </div>
+      </div>
       </div>
 
     
