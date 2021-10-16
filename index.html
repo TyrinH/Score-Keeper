@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score Keeper</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <title>Score Keeper</title>
 </head>
+
 <body>
-    <h1>Score keeping App</h1>
 
-    <h2><span id='p1Value'>0</span> to <span id='p2Value'>0</span></h2>
-    <button id='p1Button'>Player One +1</button>
-    <button id='p2Button'>Player Two +1</button>
-    <select name="" id="winningValue">
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-    </select>
-    <button id='reset'>Reset</button>
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title is-centered">
+            Score Keeping App
+          </p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content cloumns">
+          <div class="content is-large column is-centered">
+            <h2><span id='p1Value'>0</span> to <span id='p2Value'>0</span></h2>
+            <br>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <button id='p1Button' class="button is-large is-primary">Player One +1</button>
+          <button id='p2Button' class="button is-large is-warning">Player Two +1</button>
+          <select name="" id="winningValue" class="select is-large">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+          <button id='reset' class="button is-large is-danger">Reset</button>
+        </footer>
+      </div>
+    </div>
+  </div>
 
 
-    <script src="app.js"></script>
+
+
+  <script src="app.js"></script>
 </body>
+
 </html>
